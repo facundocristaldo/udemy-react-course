@@ -12,13 +12,21 @@ function App() {
     newUsers[userindex].name = event.target.value;
     setUsers(newUsers);
   };
+
+  const handleChangeText = (newText,modifiedId)=>{
+    const newUsers = [...users]
+    const userindex = newUsers.findIndex(user=>user.id===modifiedId);
+    newUsers[userindex].name = newText;
+    setUsers(newUsers);
+  }
+
   return (
     <div>
-      <h1 onClick={changeUsernames}>Some text!</h1>
+      <h1>Assignment 2</h1>
       {users.map(user => {
         return (
-          <div key={user.id}>
-            <UserInput handleChange={(event)=>changeUsernames(event,user.id)} value={user.name} />
+          <div key={user.id}  className="output">
+            <UserInput handleChange={(event)=>changeUsernames(event,user.id)} value={user.name}  id={user.id} handleChangeText={handleChangeText}/>
             <UserOutput username={user.name}></UserOutput>
           </div>
         );
