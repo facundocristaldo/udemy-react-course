@@ -12,7 +12,8 @@ export default function UserInput(props) {
     const charsArray = [...props.value]
 
     const removeChar=removeIndex=>{
-        const newChars = charsArray.filter((char,index)=>index!==removeIndex)
+        const newChars = [...props.value]
+        newChars.splice(removeIndex,1)
         const newText = newChars.join("")
         props.handleChangeText(newText,props.id)
     }
