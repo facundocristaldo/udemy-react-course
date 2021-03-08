@@ -4,11 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import StyledComponents from './components/StyledComponents';
+import CssModules from './components/CssModules';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    <StyledComponents/>
+    {/* <StyledComponents/> */}
+    <CssModules/>
   </React.StrictMode>,
   document.getElementById('root')
 );
