@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./App.css";
+import StylingComponent from "./components/StylingComponent";
 import UserInput from "./components/UserInput/UserInput";
 import UserOutput from "./components/UserOutput/UserOutput";
-
 function App() {
   const [users, setUsers] = useState([{id:1,name:"Juan"}, {id:2,name:"Maria"}, {id:3,name:"Diego"}]);
 
@@ -23,6 +23,8 @@ function App() {
           </div>
         );
       })}
+      <StylingComponent/>
+      
     </div>
   );
 }
