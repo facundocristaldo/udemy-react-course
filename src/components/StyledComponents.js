@@ -28,6 +28,7 @@ const StyledComponents = () => {
       <h3>Styled Component</h3>
       <p>Hi, my name is Olaf and i love warm hugs</p>
       <StyledButton bgcolor="red"hoverbgcolor="salmon">Click me</StyledButton>
+      <button className="SomeButtonStyle">A button</button>
     </StyledDiv>
   );
 };
