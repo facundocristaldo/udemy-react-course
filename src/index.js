@@ -8,9 +8,9 @@ import CssModules from './components/CssModules';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
+    <App />
     {/* <StyledComponents/> */}
-    <CssModules/>
+    {/* <CssModules/> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
